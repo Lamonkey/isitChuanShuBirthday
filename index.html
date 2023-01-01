@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>is it ponshu's birthday</title>
+    <link rel="icon" href="./hamster.png" type="image/x-icon">
+    <style>
+        body {
+            background-color: pink;
+        }
+        
+        #isit {
+            text-align: center;
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            font-size: 200px;
+            color: aliceblue;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h1 id='isit'>
+        </h1>
+    </main>
+    <script>
+        let isit = document.getElementById("isit")
+        const today = new Date()
+        if (today.getDate() === 14 & today.getMonth() === 1) {
+            isit.textContent = "Yes"
+        } else {
+            isit.textContent = "No"
+        }
+    </script>
+</body>
+
+</html>
